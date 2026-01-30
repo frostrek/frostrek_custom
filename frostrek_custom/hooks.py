@@ -4,7 +4,13 @@ app_publisher = "fros"
 app_description = "custom app"
 app_email = "support@frostrek.com"
 app_license = "mit"
+app_include_css = [
+    "/assets/frostrek_custom/css/index.css"
+]
 
+app_include_js = [
+    "/assets/frostrek_custom/js/desk.js"
+]
 # Apps
 # ------------------
 

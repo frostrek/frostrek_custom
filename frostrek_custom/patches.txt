@@ -4,3 +4,7 @@
 
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
+frostrek_custom.patches.update_chart_of_accounts_text
+frostrek_custom.patches.replace_erpnext_text
+frostrek_custom.patches.remove_onboarding_videos
+frostrek_custom.patches.remove_onboarding_tutorials

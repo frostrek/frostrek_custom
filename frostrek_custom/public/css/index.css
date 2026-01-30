@@ -1,0 +1,138 @@
+/* ================================
+   Frostrek ERP – Design Tokens
+   ================================ */
+
+:root {
+  /* Brand */
+  --frostrek-primary: #f3f3f3;     /* Deep white */
+  --frostrek-accent: #000000;      /* Soft cyan */
+  --frostrek-bg: #3c6791;          /* Light neutral */
+  --frostrek-card: rgb(204, 204, 204);          /* Card background */
+  --frostrek-border: #f1dacc;
+  --frostrek-text: #50ca79;
+  --frostrek-muted: #64748b;
+
+  /* Radius & shadow */
+  --frostrek-radius: 10px;
+  --frostrek-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+}
+/* ================================
+   Navbar – Frostrek
+   ================================ */
+
+.navbar,.navbar.icon-bar {
+  background-color:white !important;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.navbar-expand {
+  background-color: var(--frostrek-primary) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* .navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+} */
+.navbar-brand {
+  display: flex;
+  align-items: center;        /* vertical centering */
+  font-weight: 400;
+}
+
+.navbar-brand::after {
+  content: "FrostERP";
+  color: var(--frostrek-accent);
+  font-weight: 700;
+  font-size:larger;
+}
+
+.navbar .icon,
+.navbar svg {
+  color: #e2e8f0 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #e5e7eb !important;
+  font-size: 13px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--frostrek-accent) !important;
+}
+#navbar-search{
+  background-color: #ffffff;
+  color: #000000;
+}
+.container{
+  height:35px ;
+}
+
+/* ================================
+   Footer – Frostrek
+   ================================ */
+
+.erpnext-footer,
+footer.web-footer {
+  background: transparent;
+  border-top: 1px solid var(--frostrek-border);
+  color: var(--frostrek-muted);
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0;
+   content: "© 2026 Frostrek Technologies · All rights reserved";
+
+}
+
+.erpnext-footer::after {
+  content: "© 2026 Frostrek Technologies · All rights reserved";
+}
+
+.btn-primary{
+background-color: #1d6ed0 !important;
+border-color: #998f8e !important;
+}
+
+.navbar-brand img {
+    content: url("/files/my-logo.png");
+    max-height: 38px;             /* adjust 28–36 as needed */
+  width: auto;
+  display: block;
+}
+
+/* Navbar background */
+
+
+/* Brand text */
+.navbar-brand {
+  color: #f1f3f4 !important;
+  font-weight: 600;
+  padding: 0px;
+}
+
+/* Navbar icons */
+
+/* Active menu item */
+.navbar-nav .active {
+  border-bottom: 2px solid #38bdf8;
+}
+/* ================================
+   Cards & Lists
+   ================================ */
+
+.dashboard-list-item,
+.list-row {
+  background: var(--frostrek-card);
+  border: 1px solid var(--frostrek-border);
+  border-radius: var(--frostrek-radius);
+  box-shadow: var(--frostrek-shadow);
+  margin-bottom: 10px;
+}
+
+.dashboard-list-item:hover {
+  border-color: var(--frostrek-accent);
+}
+.navbar-brand .brand-text {
+  font-size: 18px;
+  line-height: 1;
+  color: var(--frostrek-accent);
+}
