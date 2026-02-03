@@ -4,8 +4,8 @@
 
 :root {
   /* Brand */
-  --frostrek-primary: #f3f3f3;     /* Deep white */
-  --frostrek-accent: #000000;      /* Soft cyan */
+  --frostrek-primary: #9cdbd6;     /* Deep white */
+  --frostrek-accent: #2c8585;      /* Soft cyan */
   --frostrek-bg: #3c6791;          /* Light neutral */
   --frostrek-card: rgb(204, 204, 204);          /* Card background */
   --frostrek-border: #f1dacc;
@@ -63,9 +63,11 @@
   background-color: #ffffff;
   color: #000000;
 }
-.container{
-  height:35px ;
+.container {
+    height: 75px;
 }
+
+
 
 /* ================================
    Footer – Frostrek
@@ -88,7 +90,7 @@ footer.web-footer {
 }
 
 .btn-primary{
-background-color: #1d6ed0 !important;
+background-color: #9cdbd6 !important;
 border-color: #998f8e !important;
 }
 
@@ -135,4 +137,50 @@ border-color: #998f8e !important;
   font-size: 18px;
   line-height: 1;
   color: var(--frostrek-accent);
+}
+
+
+.container {
+    height: 40px;
+}
+
+
+/* media frammmmessss */
+@media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 98%;
+        margin:0px;
+    }
+}
+@media (min-width: 992px) {
+    [data-page-route=Workspaces] .layout-main {
+        height: 100vh;
+    }
+}
+
+
+
+
+
+/* SIDEBAR */
+
+.layout-side-section{
+  background-color: #9cdbd6;
+
+
+}
+.row .layout-main{
+  margin:0px;
+}
+.page-head{
+  background-color: #9cdbd6;
+  margin:0px;
+  padding-bottom:15px;
+}
+.page-body{
+  margin:0px;
+}
+
+.sidebar-item-container a{
+  font-weight: 700;
 }
